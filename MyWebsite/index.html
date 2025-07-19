@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Moanidid Coffee</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script>
+        
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coffee-dark': '#4b3619', 
+                        'coffee-medium': '#795c32', 
+                        'coffee-light': '#c8a379', 
+                        'coffee-cream': '#f8f5ed', 
+                    }
+                }
+            }
+        }
+    </script>
+    </head>
+
+<body class="font-sans bg-coffee-cream text-coffee-dark">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 flex justify-between items-center px-4 py-2 bg-coffee-dark shadow-lg" style="background-color: #795c32;">
+        <div class="h-16 w-16 rounded-full bg-center bg-cover flex justify-center items-center overflow-hidden">
+            <img src="images/LogoKopi-remove.png" alt="Moanidid Coffee Logo" class="w-24 h-24 object-cover">
+        </div>
+
+        <nav class="flex space-x-6" >
+            <a class="px-4 py-2 rounded-lg text-white hover:bg-coffee-medium transition-colors duration-200 text-lg font-medium" href="#home">Home</a>
+            <a class="px-4 py-2 rounded-lg text-white hover:bg-coffee-medium transition-colors duration-200 text-lg font-medium" href="#profile">Profile</a>
+            <a class="px-4 py-2 rounded-lg text-white hover:bg-coffee-medium transition-colors duration-200 text-lg font-medium" href="#product">Product</a>
+            <a class="px-4 py-2 rounded-lg text-white hover:bg-coffee-medium transition-colors duration-200 text-lg font-medium" href="#message">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- body web -->
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Home -->
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center p-8 bg-cover bg-center rounded-lg shadow-xl" style="background-image: url('images/Kopiseduh.png'); background-blend-mode: multiply; background-color: rgba(0, 0, 0, 0.4);">
+            <h1 id="welcome-message" class="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Hi There! Welcome to Our Website</h1>
+            <p class="text-xl md:text-2xl text-white mb-2 drop-shadow-md">Seduh rasa, seruput kenangan sentuhan rasa yang tenang.</p>
+            <p class="text-xl md:text-2xl text-white drop-shadow-md">Rasakan hangatnya kopi, teman seduh di tiap harimu.</p>
+            </section>
+
+        <hr class="my-12 border-t-2 border-coffee-light">
+
+        <section id="profile" class="min-h-screen p-8 bg-white rounded-lg shadow-xl mb-12">
+            <!-- profile -->
+            <h2 class="text-4xl font-bold text-coffee-dark mb-8 text-center">Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+                <div class="flex flex-col items-center text-center p-6 bg-coffee-cream rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lQBVWy47_jjqaEg-Aib-6DhFncAx__cXIr1ffflbO7Ijt3EGw3oQHP2s5R4_XnDqzBI&usqp=CAU" alt="John Mc.Jurney" class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-coffee-light">
+                    <p class="text-xl font-semibold text-coffee-dark mb-1"><b>John Mc.Jurney</b></p>
+                    <p class="text-coffee-medium">Production</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-coffee-cream rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lQBVWy47_jjqaEg-Aib-6DhFncAx__cXIr1ffflbO7Ijt3EGw3oQHP2s5R4_XnDqzBI&usqp=CAU" alt="Bash Gillis" class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-coffee-light">
+                    <p class="text-xl font-semibold text-coffee-dark mb-1"><b>Bash Gillis</b></p>
+                    <p class="text-coffee-medium">Marketing</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-coffee-cream rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lQBVWy47_jjqaEg-Aib-6DhFncAx__cXIr1ffflbO7Ijt3EGw3oQHP2s5R4_XnDqzBI&usqp=CAU" alt="Anna Corilla" class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-coffee-light">
+                    <p class="text-xl font-semibold text-coffee-dark mb-1"><b>Anna Corilla</b></p>
+                    <p class="text-coffee-medium">Manager</p>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="mt-12 p-8 bg-coffee-medium text-white rounded-lg shadow-md" style="background-color: #4f3818;">
+                <h3 class="text-3xl font-bold mb-4 text-center">About Moanidid Coffee</h3>
+                <p class="text-lg leading-relaxed mb-6 text-center">Moanidid Coffee hadir untuk menyajikan pengalaman kopi instan terbaik, memadukan kemudahan dengan cita rasa otentik yang memukau. Kami percaya bahwa kopi berkualitas tinggi harus dapat dinikmati kapan saja dan di mana saja, tanpa mengurangi kenikmatan sejati dari setiap tegukan.</p>
+
+                <h3 class="text-3xl font-bold mb-4 text-center">Our Vision & Mission</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-2">Vision:</h4>
+                        <p class="text-lg">Menjadi pilihan utama kopi instan global yang menginspirasi kebahagiaan dan energi positif melalui setiap cangkir.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-2">Mission:</h4>
+                        <ul class="list-disc list-inside text-lg">
+                            <li>Menyediakan produk kopi instan berkualitas tinggi dengan inovasi rasa yang berkelanjutan.</li>
+                            <li>Mengutamakan kepuasan pelanggan melalui kemudahan akses dan pengalaman menikmati kopi yang tak terlupakan.</li>
+                            <li>Membangun merek yang bertanggung jawab secara sosial dan lingkungan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <hr class="my-12 border-t-2 border-coffee-light">
+
+        <!-- Product -->
+        <section id="product" class="min-h-screen p-8 bg-white rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-coffee-dark mb-8 text-center">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-coffee-cream rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="images\Kopiseduh.png" alt="Original Blend Coffee" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-coffee-dark mb-2">Original Blend</h3>
+                        <p class="text-coffee-medium mb-4">Perpaduan sempurna biji kopi pilihan untuk rasa klasik yang kuat dan aroma memikat. Cocok untuk memulai hari Anda.</p>
+                        <span class="text-xl font-bold text-coffee-dark">Rp 35.000</span>
+                    </div>
+                </div>
+                <div class="bg-coffee-cream rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="images\kopi_huzelnut.png" alt="Hazelnut Delight Coffee" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-coffee-dark mb-2">Hazelnut Delight</h3>
+                        <p class="text-coffee-medium mb-4">Kopi instan dengan sentuhan rasa hazelnut alami yang lembut. Pilihan tepat untuk sensasi kopi yang berbeda.</p>
+                        <span class="text-xl font-bold text-coffee-dark">Rp 40.000</span>
+                    </div>
+                </div>
+                <div class="bg-coffee-cream rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="images\goldespresso.png" alt="Espresso Gold Coffee" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-coffee-dark mb-2">Espresso Gold</h3>
+                        <p class="text-coffee-medium mb-4">Intensitas espresso dalam bentuk instan. Kaya rasa, pekat, dan siap menyemangati hari Anda.</p>
+                        <span class="text-xl font-bold text-coffee-dark">Rp 45.000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-t-2 border-coffee-light">
+
+        <!-- Form -->
+        <section id="message" class="min-h-screen flex flex-col justify-center items-center p-8 bg-white rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-coffee-dark mb-8 text-center">Message Us</h2>
+            <form id="messageForm" class="w-full max-w-md bg-coffee-cream p-8 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label for="name" class="block text-coffee-dark text-lg font-semibold mb-2">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-coffee-light rounded-md" required />
+            </div>
+            <div class="mb-4">
+                <label for="birthDate" class="block text-coffee-dark text-lg font-semibold mb-2">Birth Date:</label>
+                <input id="birthDate" name="birthDate" type="date" class="w-full px-4 py-2 border border-coffee-light rounded-md" required />
+            </div>
+            <div class="mb-4">
+                <label class="block text-coffee-dark text-lg font-semibold mb-2">Gender:</label>
+                <div class="flex items-center space-x-4">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="gender" value="Male" class="form-radio text-coffee-dark" required />
+                    <span class="ml-2 text-coffee-dark">Male</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="gender" value="Female" class="form-radio text-coffee-dark" required />
+                    <span class="ml-2 text-coffee-dark">Female</span>
+                </label>
+                </div>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-coffee-dark text-lg font-semibold mb-2">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." class="w-full px-4 py-2 border border-coffee-light rounded-md resize-y" required></textarea>
+            </div>
+            <button type="submit" class="w-full text-white py-3 rounded-md hover:bg-coffee-light hover:text-coffee-dark transition duration-200" style="background-color: #c8a379;">Submit</button>
+            </form>
+
+            <!-- output display -->
+            <div id="outputDisplay" class="mt-8 p-6 bg-white rounded-lg shadow-md w-full max-w-md border border-coffee-light">
+            <p class="text-coffee-dark text-lg mb-2"><span class="font-semibold">Current Time:</span> <span id="outputTime"></span></p>
+            <p class="text-coffee-dark text-lg mb-2"><span class="font-semibold">Name:</span> <span id="outputName"></span></p>
+            <p class="text-coffee-dark text-lg mb-2"><span class="font-semibold">Birth Date:</span> <span id="outputBirthDate"></span></p>
+            <p class="text-coffee-dark text-lg mb-2"><span class="font-semibold">Gender:</span> <span id="outputGender"></span></p>
+            <p class="text-coffee-dark text-lg"><span class="font-semibold">Message:</span> <span id="outputMessage"></span></p>
+            </div>
+        </section>
+
+        <footer class="text-white text-center py-4" style="background-color:#795c32;">
+            <p class="text-lg">Created by Suci Wahyuni</p>
+            <p class="text-sm">© 2025 All rights reserved.</p>
+        </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
